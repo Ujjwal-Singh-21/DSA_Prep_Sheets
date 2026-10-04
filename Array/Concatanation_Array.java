@@ -8,8 +8,9 @@ public class Concatanation_Array {
         for (int i = 0; i < ans.length; i++) {
             if (i < arr.length) {
                 ans[i] = arr[i];
+            } else {
+                ans[i] = arr[i - arr.length];
             }
-            ans[i] = arr[i - arr.length];
         }
         return ans;
     }
